@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2615D6FF22027E510057EFE7 /* RaagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615D6FE22027E510057EFE7 /* RaagTableViewCell.swift */; };
+		2615D701220280820057EFE7 /* RaagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615D700220280820057EFE7 /* RaagTableViewController.swift */; };
+		26553317220274C700578FA7 /* Raag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553316220274C700578FA7 /* Raag.swift */; };
+		268F2911220264410032FE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F2910220264410032FE7A /* AppDelegate.swift */; };
+		268F2913220264410032FE7A /* RaagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F2912220264410032FE7A /* RaagViewController.swift */; };
+		268F2916220264410032FE7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268F2914220264410032FE7A /* Main.storyboard */; };
+		268F2918220264430032FE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268F2917220264430032FE7A /* Assets.xcassets */; };
+		268F291B220264430032FE7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268F2919220264430032FE7A /* LaunchScreen.storyboard */; };
+		268F2926220264430032FE7A /* RaagNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F2925220264430032FE7A /* RaagNotesTests.swift */; };
+		26F34F332202EE32007E6B47 /* Raags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26F34F322202EE31007E6B47 /* Raags.plist */; };
+		26F34F352202F156007E6B47 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F34F342202F156007E6B47 /* DataController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		268F2922220264430032FE7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268F2905220264410032FE7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268F290C220264410032FE7A;
+			remoteInfo = RaagNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2615D6FE22027E510057EFE7 /* RaagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaagTableViewCell.swift; sourceTree = "<group>"; };
+		2615D700220280820057EFE7 /* RaagTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaagTableViewController.swift; sourceTree = "<group>"; };
+		26553316220274C700578FA7 /* Raag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raag.swift; sourceTree = "<group>"; };
+		268F290D220264410032FE7A /* RaagNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaagNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		268F2910220264410032FE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		268F2912220264410032FE7A /* RaagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaagViewController.swift; sourceTree = "<group>"; };
+		268F2915220264410032FE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		268F2917220264430032FE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		268F291A220264430032FE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		268F291C220264430032FE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268F2921220264430032FE7A /* RaagNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaagNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268F2925220264430032FE7A /* RaagNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaagNotesTests.swift; sourceTree = "<group>"; };
+		268F2927220264430032FE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F34F322202EE31007E6B47 /* Raags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Raags.plist; sourceTree = "<group>"; };
+		26F34F342202F156007E6B47 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268F290A220264410032FE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268F291E220264430032FE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		268F2904220264410032FE7A = {
+			isa = PBXGroup;
+			children = (
+				268F290F220264410032FE7A /* RaagNotes */,
+				268F2924220264430032FE7A /* RaagNotesTests */,
+				268F290E220264410032FE7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		268F290E220264410032FE7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268F290D220264410032FE7A /* RaagNotes.app */,
+				268F2921220264430032FE7A /* RaagNotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268F290F220264410032FE7A /* RaagNotes */ = {
+			isa = PBXGroup;
+			children = (
+				268F2910220264410032FE7A /* AppDelegate.swift */,
+				268F2912220264410032FE7A /* RaagViewController.swift */,
+				2615D6FE22027E510057EFE7 /* RaagTableViewCell.swift */,
+				2615D700220280820057EFE7 /* RaagTableViewController.swift */,
+				268F2914220264410032FE7A /* Main.storyboard */,
+				268F2917220264430032FE7A /* Assets.xcassets */,
+				268F2919220264430032FE7A /* LaunchScreen.storyboard */,
+				268F291C220264430032FE7A /* Info.plist */,
+				26F34F322202EE31007E6B47 /* Raags.plist */,
+				26553316220274C700578FA7 /* Raag.swift */,
+				26F34F342202F156007E6B47 /* DataController.swift */,
+			);
+			path = RaagNotes;
+			sourceTree = "<group>";
+		};
+		268F2924220264430032FE7A /* RaagNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				268F2925220264430032FE7A /* RaagNotesTests.swift */,
+				268F2927220264430032FE7A /* Info.plist */,
+			);
+			path = RaagNotesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		268F290C220264410032FE7A /* RaagNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268F292A220264430032FE7A /* Build configuration list for PBXNativeTarget "RaagNotes" */;
+			buildPhases = (
+				268F2909220264410032FE7A /* Sources */,
+				268F290A220264410032FE7A /* Frameworks */,
+				268F290B220264410032FE7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaagNotes;
+			productName = RaagNotes;
+			productReference = 268F290D220264410032FE7A /* RaagNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		268F2920220264430032FE7A /* RaagNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268F292D220264430032FE7A /* Build configuration list for PBXNativeTarget "RaagNotesTests" */;
+			buildPhases = (
+				268F291D220264430032FE7A /* Sources */,
+				268F291E220264430032FE7A /* Frameworks */,
+				268F291F220264430032FE7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268F2923220264430032FE7A /* PBXTargetDependency */,
+			);
+			name = RaagNotesTests;
+			productName = RaagNotesTests;
+			productReference = 268F2921220264430032FE7A /* RaagNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		268F2905220264410032FE7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Irvanjit Singh";
+				TargetAttributes = {
+					268F290C220264410032FE7A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					268F2920220264430032FE7A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 268F290C220264410032FE7A;
+					};
+				};
+			};
+			buildConfigurationList = 268F2908220264410032FE7A /* Build configuration list for PBXProject "RaagNotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 268F2904220264410032FE7A;
+			productRefGroup = 268F290E220264410032FE7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268F290C220264410032FE7A /* RaagNotes */,
+				268F2920220264430032FE7A /* RaagNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268F290B220264410032FE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268F291B220264430032FE7A /* LaunchScreen.storyboard in Resources */,
+				268F2918220264430032FE7A /* Assets.xcassets in Resources */,
+				268F2916220264410032FE7A /* Main.storyboard in Resources */,
+				26F34F332202EE32007E6B47 /* Raags.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268F291F220264430032FE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268F2909220264410032FE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2615D6FF22027E510057EFE7 /* RaagTableViewCell.swift in Sources */,
+				26F34F352202F156007E6B47 /* DataController.swift in Sources */,
+				268F2913220264410032FE7A /* RaagViewController.swift in Sources */,
+				26553317220274C700578FA7 /* Raag.swift in Sources */,
+				2615D701220280820057EFE7 /* RaagTableViewController.swift in Sources */,
+				268F2911220264410032FE7A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268F291D220264430032FE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268F2926220264430032FE7A /* RaagNotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268F2923220264430032FE7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268F290C220264410032FE7A /* RaagNotes */;
+			targetProxy = 268F2922220264430032FE7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		268F2914220264410032FE7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268F2915220264410032FE7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		268F2919220264430032FE7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268F291A220264430032FE7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		268F2928220264430032FE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		268F2929220264430032FE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		268F292B220264430032FE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C62J463MWM;
+				INFOPLIST_FILE = RaagNotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irvanjit.RaagNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		268F292C220264430032FE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C62J463MWM;
+				INFOPLIST_FILE = RaagNotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irvanjit.RaagNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		268F292E220264430032FE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C62J463MWM;
+				INFOPLIST_FILE = RaagNotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irvanjit.RaagNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaagNotes.app/RaagNotes";
+			};
+			name = Debug;
+		};
+		268F292F220264430032FE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C62J463MWM;
+				INFOPLIST_FILE = RaagNotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irvanjit.RaagNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaagNotes.app/RaagNotes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268F2908220264410032FE7A /* Build configuration list for PBXProject "RaagNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268F2928220264430032FE7A /* Debug */,
+				268F2929220264430032FE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268F292A220264430032FE7A /* Build configuration list for PBXNativeTarget "RaagNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268F292B220264430032FE7A /* Debug */,
+				268F292C220264430032FE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268F292D220264430032FE7A /* Build configuration list for PBXNativeTarget "RaagNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268F292E220264430032FE7A /* Debug */,
+				268F292F220264430032FE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 268F2905220264410032FE7A /* Project object */;
+}

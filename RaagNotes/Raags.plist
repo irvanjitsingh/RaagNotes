@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Sri Raag</string>
+		<key>aroh</key>
+		<string>Sa, re, ma, Pa, Ni, Sa* </string>
+		<key>avroh</key>
+		<string>Sa*, Ni, dha, Pa, ma, Ga, re, Sa</string>
+		<key>sur</key>
+		<string>Rishab Dhaivat are Komal, Ma Teever and remaining notes are shudh</string>
+		<key>thaat</key>
+		<string>Poorvi</string>
+		<key>jaati</key>
+		<string>Aurav - Sampuran</string>
+		<key>time</key>
+		<string>First quarter of night (Sandhi-prakash, dusk)</string>
+		<key>vadi</key>
+		<string>Rishabh</string>
+		<key>samvadi</key>
+		<string>Pancham</string>
+		<key>vivadi</key>
+		<string>Gandhar, Dhaivat (in Aroh)</string>
+		<key>mainSur</key>
+		<string>Sa, re, re, Pa, ma dha Pa re, re Ga, re Sa</string>
+		<key>trackA</key>
+		<string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Jis_Pityare_Sio_Neh_-_Sri_Raag_Mahalla_2.mp3</string>
+		<key>trackB</key>
+		<string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_01%20sri-%20har%20bin%20jio%20jal%20bal%20jao.mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Maajh</string>
+		<key>aroh</key>
+		<string>Sa Re, Ma Pa, Nee Sa*</string>
+		<key>avroh</key>
+		<string>Sa* nee Dha Pa, Dha Ma Ga Ma, Re Pa ga Re, ga Sa Re Ne Sa</string>
+		<key>sur</key>
+		<string>Both Gandhar and both Nishad, the rest of the notes (swar) are shud.</string>
+		<key>thaat</key>
+		<string>Khmaahj</string>
+		<key>jaati</key>
+		<string>undefined</string>
+		<key>time</key>
+		<string>First quarter (pher) of night</string>
+		<key>vadi</key>
+		<string>Rishab (Re)</string>
+		<key>samvadi</key>
+		<string>Pancham (Pa)</string>
+		<key>vivadi</key>
+		<string>Gandhar, Dhaiwat (in Aroh)</string>
+		<key>mainSur</key>
+		<string>Pa, Dha Ma Ga Ma, Re Pa, Ma ga Re, ga Sa Re Ne Sa</string>
+		<key>trackA</key>
+		<string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+		<key>trackB</key>
+		<string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gauri</string>
+		<key>aroh</key>
+		<string>Sa re, Ga re, Ma Pa, Nee Sa*</string>
+		<key>avroh</key>
+		<string>Sa* Nee dha Ma Pa, dha Pa Ma Ga, re Ga re, Sa Nee Sa</string>
+		<key>sur</key>
+		<string>Rishab and Dhaiwat are komal, rest of the notes (swar) are shud.</string>
+		<key>thaat</key>
+		<string>Bhairav</string>
+		<key>jaati</key>
+		<string>Aurav - Sampooran</string>
+		<key>time</key>
+		<string>First quarter of night (evening)</string>
+		<key>vadi</key>
+		<string>Rishab (Re)</string>
+		<key>samvadi</key>
+		<string>Pancham (Pa)</string>
+		<key>vivadi</key>
+		<string>Ga and Dha (in Aroh)</string>
+		<key>mainSur</key>
+		<string>Ma dha Pa, dha Ma Pa Ma Ga re, Ga re Sa Nee, Sa</string>
+		<key>trackA</key>
+		<string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+		<key>trackB</key>
+		<string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Aasa</string>
+	  <key>aroh</key>
+	  <string>Sa, Re Ma, Pa, Dha Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* Nee Dha Pa, Ma, Ga Re Sa Re Ga Sa</string>
+	  <key>sur</key>
+	  <string>All notes (swar) are shud.</string>
+	  <key>thaat</key>
+	  <string>Bilawal</string>
+	  <key>jaati</key>
+	  <string>Aurav - Sampooran</string>
+	  <key>time</key>
+	  <string>Sunrise and Sunset (morning and evening)</string>
+	  <key>vadi</key>
+	  <string>Madhym (Ma)</string>
+	  <key>samvadi</key>
+	  <string>Sharaj (Sa)</string>
+	  <key>vivadi</key>
+	  <string>Gandhar, Nishad (in Aroh)</string>
+	  <key>mainSur</key>
+	  <string>Re Ma, Pa, Dha Sa*, Nee Dha Pa Ma, Ga Sa Re Ga Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Gujri</string>
+	  <key>aroh</key>
+	  <string>Sa re, ga ma dha, Nee Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* Nee dha, ma ga re, ga re Sa</string>
+	  <key>sur</key>
+	  <string>Rishab, Gandhar and Dhaiwat are komal notes, Madhyam is Teever.</string>
+	  <key>thaat</key>
+	  <string>Todee</string>
+	  <key>jaati</key>
+	  <string>Charav - Charav</string>
+	  <key>time</key>
+	  <string>Second quarter of the day.</string>
+	  <key>vadi</key>
+	  <string>Dhaiwat (Dha)</string>
+	  <key>samvadi</key>
+	  <string>Rishab (Re)</string>
+	  <key>vivadi</key>
+	  <string>Pancham (Pa)</string>
+	  <key>mainSur</key>
+	  <string>dha, ma dha, Nee dha, ma dha ma ga re, re ga re Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Devgandhari</string>
+	  <key>aroh</key>
+	  <string>Sa Re Ma, Pa Dha, Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* Nee Dha Pa, Ma Pa, dha nee dha Pa, Ma Ga Re Sa</string>
+	  <key>sur</key>
+	  <string>Both Dhaiwat and both Nishad. Rest of the notes are shud.</string>
+	  <key>thaat</key>
+	  <string>Bilawal (Aasaavari ang)</string>
+	  <key>jaati</key>
+	  <string>Aurav - Sampooran</string>
+	  <key>time</key>
+	  <string>Second quarter of the day.</string>
+	  <key>vadi</key>
+	  <string>Madhyam (Ma)</string>
+	  <key>samvadi</key>
+	  <string>Sharaj (Sa)</string>
+	  <key>vivadi</key>
+	  <string>Gandhar, Nishad (in Aroh)</string>
+	  <key>mainSur</key>
+	  <string>dha, nee dha Pa, Ma Ga, Sa Re Ma, Ga Sa Re Ga Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bihaagra</string>
+	  <key>aroh</key>
+	  <string>Nee Sa Ga, Ma Pa Nee, Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* Nee Dha Pa, nee Dha Pa, Dha Ga Ma Ga, Re Sa</string>
+	  <key>sur</key>
+	  <string>Both Nishad, rest of the notes (swar) are shud.</string>
+	  <key>thaat</key>
+	  <string>Bilawal</string>
+	  <key>jaati</key>
+	  <string>Aurav - Sampooran</string>
+	  <key>time</key>
+	  <string>Second quarter of the night</string>
+	  <key>vadi</key>
+	  <string>Gandhar (Ga)</string>
+	  <key>samvadi</key>
+	  <string>Nishad (Nee)</string>
+	  <key>vivadi</key>
+	  <string>Rishab, Dhaiwat (in Aroh)</string>
+	  <key>mainSur</key>
+	  <string>Ga Ma Pa, nee Dha Pa, Dha Ga Ma Ga, Re Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Vadhans</string>
+	  <key>aroh</key>
+	  <string>Sa Re Ma Pa, Dha nee Pa, Nee Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* nee Pa, Dha Ma Ga Re, Sa Nee Sa</string>
+	  <key>sur</key>
+	  <string>both Nishad, rest of the notes (swar) are shud</string>
+	  <key>thaat</key>
+	  <string>Khmaahj</string>
+	  <key>jaati</key>
+	  <string>Charav - Sampooran</string>
+	  <key>time</key>
+	  <string>Afternoon</string>
+	  <key>vadi</key>
+	  <string>Pancham (Pa)</string>
+	  <key>samvadi</key>
+	  <string>Rishab (Re)</string>
+	  <key>vivadi</key>
+	  <string>Gandhar (in Aroh)</string>
+	  <key>mainSur</key>
+	  <string>Sa Re Ma Pa nee Pa, Dha Ma Ga Re, Sa Nee Pa Nee Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Sorath</string>
+	  <key>aroh</key>
+	  <string>Sa Re, Ma Pa, Nee Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* Re* nee Dha, Ma Pa Dha Ma GaRe, Nee Sa</string>
+	  <key>sur</key>
+	  <string>rest. of the notes are shud. The use of 'Ga' in ascending scale is only by 'meand'.</string>
+	  <key>thaat</key>
+	  <string>Khmaahj</string>
+	  <key>jaati</key>
+	  <string>Aurav - Sampooran</string>
+	  <key>time</key>
+	  <string>Second quarter of the night</string>
+	  <key>vadi</key>
+	  <string>Rishab (Re)</string>
+	  <key>samvadi</key>
+	  <string>Pancham (Pa)</string>
+	  <key>vivadi</key>
+	  <string>Both Nishad, Gandhar, Dhaivat (in Aroh)</string>
+	  <key>mainSur</key>
+	  <string>Sa Re, Ma Pa, nee Dha, Pa, Dha Ma GaRe, Nee Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Dhanasari</string>
+	  <key>aroh</key>
+	  <string>Sa ga, Ma Pa, nee Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* nee Dha Pa, Ma Pa ga, Re Sa</string>
+	  <key>sur</key>
+	  <string>Gandhar and Nishad komal, rest of the notes are shud.</string>
+	  <key>thaat</key>
+	  <string>Khafi</string>
+	  <key>jaati</key>
+	  <string>Aurav - Sampooran</string>
+	  <key>time</key>
+	  <string>First quarter (pher) of night</string>
+	  <key>vadi</key>
+	  <string>Pancham (Pa)</string>
+	  <key>samvadi</key>
+	  <string>Sharaj (Sa)</string>
+	  <key>vivadi</key>
+	  <string>Rishab, Dhaiwat (in Aroh)</string>
+	  <key>mainSur</key>
+	  <string>nee Sa ga, Ma Pa, nee Dha Pa, Ma Pa ga, Re Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Jaitsree</string>
+	  <key>aroh</key>
+	  <string>Sa Ga, Ma Pa, Nee Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* Nee dha Pa, ma Ga, re Sa</string>
+	  <key>sur</key>
+	  <string>Rishab and Dhaiwat are komal, Madhym is teever. Rest of the notes (swar) are shud.</string>
+	  <key>thaat</key>
+	  <string>Poorvi</string>
+	  <key>jaati</key>
+	  <string>Aurav - Sampooran</string>
+	  <key>time</key>
+	  <string>Fourth quarter of the day.</string>
+	  <key>vadi</key>
+	  <string>Gandhar (Ga)</string>
+	  <key>samvadi</key>
+	  <string>Nishad (Nee)</string>
+	  <key>vivadi</key>
+	  <string>Rishab, Dhaiwat (in Aroh)</string>
+	  <key>mainSur</key>
+	  <string>Pa, Dha Ma Ga Ma, Re Pa, Ma ga Re, ga Sa Re Ne Sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Todee</string>
+	  <key>aroh</key>
+	  <string>Sa re ga, ma Pa ma dha, Nee Sa*</string>
+	  <key>avroh</key>
+	  <string>Sa* Nee dha, Pa, ma ga, re, Sa</string>
+	  <key>sur</key>
+	  <string>Rishab, Gandhar and Dhaiwat are komal, Madhyam is Teever.</string>
+	  <key>thaat</key>
+	  <string>Todee</string>
+	  <key>jaati</key>
+	  <string>Sampooran - Sampooran</string>
+	  <key>time</key>
+	  <string>First quarter (pher) of night</string>
+	  <key>vadi</key>
+	  <string>Dhaiwat (Dha)</string>
+	  <key>samvadi</key>
+	  <string>Gandhar (Ga)</string>
+	  <key>vivadi</key>
+	  <string>undefined</string>
+	  <key>mainSur</key>
+	  <string>Nee Sa, dha Pa, ma dha ma ga re, re, ga re sa</string>
+	  <key>trackA</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Bhai%20Balbir%20Singh/Bhai_Balbir_Singh_-_Khushi_Kaare_Nit_Jeo_-_Raag_Maajh_Mahalla_2.mp3</string>
+	  <key>trackB</key>
+	  <string>http://www.vikramkhalsa.com/raagalbums/Dr.%20Gurnam%20Singh/Keertani_-_International_Dr%20Gurnam%20Singh%20Patiala_Sri%20Guru%20Granth%20Sahib%20Raag%20Darshan%20Vol%201_02%20majh-%20ho%20gholi%20jio%20ghol%20ghumai.mp3</string>
+	</dict>
+</array>
+</plist>
