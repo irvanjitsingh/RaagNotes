@@ -53,7 +53,6 @@ class AddNotationViewController: UIViewController, UITextFieldDelegate, UICollec
     }
     
     func getNotationData() {
-        break
     }
     
     // MARK: UITextFieldDelegate
