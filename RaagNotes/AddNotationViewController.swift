@@ -49,6 +49,11 @@ class AddNotationViewController: UIViewController, UITextFieldDelegate, UICollec
         inputTextField.tag = TAG_INPUTFIELD
         inputTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         inputToolbar.isHidden = true
+        getNotationData()
+    }
+    
+    func getNotationData() {
+        break
     }
     
     // MARK: UITextFieldDelegate
