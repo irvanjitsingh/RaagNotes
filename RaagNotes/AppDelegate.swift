@@ -8,6 +8,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    //Global variables
+    let blueColor = UIColor(red: 0, green: 125/255, blue: 198/255, alpha: 1)
+    let selectedCell = UIColor(red: 121/255, green: 185/255, blue: 231/255, alpha: 1)
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -16,6 +16,9 @@
 		268F2918220264430032FE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268F2917220264430032FE7A /* Assets.xcassets */; };
 		268F291B220264430032FE7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268F2919220264430032FE7A /* LaunchScreen.storyboard */; };
 		268F2926220264430032FE7A /* RaagNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F2925220264430032FE7A /* RaagNotesTests.swift */; };
+		269480922205421700A6C6AF /* NotationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269480912205421700A6C6AF /* NotationTableViewController.swift */; };
+		269480942205424C00A6C6AF /* AddNotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269480932205424C00A6C6AF /* AddNotationViewController.swift */; };
+		2694809A22069C1200A6C6AF /* NotationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694809922069C1200A6C6AF /* NotationCollectionViewCell.swift */; };
 		26F34F332202EE32007E6B47 /* Raags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26F34F322202EE31007E6B47 /* Raags.plist */; };
 		26F34F352202F156007E6B47 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F34F342202F156007E6B47 /* DataController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		268F2921220264430032FE7A /* RaagNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaagNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		268F2925220264430032FE7A /* RaagNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaagNotesTests.swift; sourceTree = "<group>"; };
 		268F2927220264430032FE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269480912205421700A6C6AF /* NotationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotationTableViewController.swift; sourceTree = "<group>"; };
+		269480932205424C00A6C6AF /* AddNotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotationViewController.swift; sourceTree = "<group>"; };
+		2694809922069C1200A6C6AF /* NotationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotationCollectionViewCell.swift; sourceTree = "<group>"; };
 		26F34F322202EE31007E6B47 /* Raags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Raags.plist; sourceTree = "<group>"; };
 		26F34F342202F156007E6B47 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,9 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				268F2910220264410032FE7A /* AppDelegate.swift */,
+				269480932205424C00A6C6AF /* AddNotationViewController.swift */,
 				268F2912220264410032FE7A /* RaagViewController.swift */,
 				2615D6FE22027E510057EFE7 /* RaagTableViewCell.swift */,
 				2615D700220280820057EFE7 /* RaagTableViewController.swift */,
+				269480912205421700A6C6AF /* NotationTableViewController.swift */,
+				2694809922069C1200A6C6AF /* NotationCollectionViewCell.swift */,
 				268F2914220264410032FE7A /* Main.storyboard */,
 				268F2917220264430032FE7A /* Assets.xcassets */,
 				268F2919220264430032FE7A /* LaunchScreen.storyboard */,
@@ -213,11 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2694809A22069C1200A6C6AF /* NotationCollectionViewCell.swift in Sources */,
+				269480922205421700A6C6AF /* NotationTableViewController.swift in Sources */,
 				2615D6FF22027E510057EFE7 /* RaagTableViewCell.swift in Sources */,
 				26F34F352202F156007E6B47 /* DataController.swift in Sources */,
 				268F2913220264410032FE7A /* RaagViewController.swift in Sources */,
 				26553317220274C700578FA7 /* Raag.swift in Sources */,
 				2615D701220280820057EFE7 /* RaagTableViewController.swift in Sources */,
+				269480942205424C00A6C6AF /* AddNotationViewController.swift in Sources */,
 				268F2911220264410032FE7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
