@@ -195,6 +195,11 @@
                                                         <state key="normal" title="Remove">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="removeNote:" destination="F1w-SL-gj6" eventType="touchUpInside" id="ScQ-9Z-bwO"/>
                                                         </connections>
@@ -359,7 +364,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KwL-g6-2xP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6C2-1u-MVD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3951.1999999999998" y="803.74812593703155"/>
+            <point key="canvasLocation" x="2996" y="804"/>
         </scene>
         <!--Raag View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -403,11 +408,11 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thaatLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M01-57-vq4">
                                                         <rect key="frame" x="8" y="38.5" width="359" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                        <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.21113571524620056" green="0.48318028450012207" blue="0.75297218561172485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="M01-57-vq4" firstAttribute="leading" secondItem="kGY-Wp-JU6" secondAttribute="leading" id="6hV-0w-lHp"/>
                                                     <constraint firstItem="M01-57-vq4" firstAttribute="leading" secondItem="WRg-M4-R5C" secondAttribute="leadingMargin" id="KF6-gg-EZA"/>
@@ -433,11 +438,11 @@
                                                             <constraint firstAttribute="height" constant="22" id="8in-Mu-HjI"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                        <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.21113571524620056" green="0.48318028450012207" blue="0.75297218561172485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="kTt-iI-3S5" firstAttribute="trailing" secondItem="qsU-PW-f5P" secondAttribute="trailing" id="4Oj-7o-ccP"/>
                                                     <constraint firstItem="kTt-iI-3S5" firstAttribute="trailing" secondItem="uXj-ij-cyn" secondAttribute="trailingMargin" id="6LJ-qX-dTM"/>
@@ -460,11 +465,11 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jaatiLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlI-lG-v09">
                                                         <rect key="frame" x="8" y="38.5" width="359" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                        <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.21113571524620056" green="0.48318028450012207" blue="0.75297218561172485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="vlI-lG-v09" firstAttribute="top" secondItem="bUd-9G-Nf5" secondAttribute="bottom" constant="8" symbolic="YES" id="1us-DO-ROs"/>
                                                     <constraint firstItem="vlI-lG-v09" firstAttribute="trailing" secondItem="x5x-b4-62f" secondAttribute="trailingMargin" id="Hi9-LP-woZ"/>
@@ -487,11 +492,11 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vadiLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJp-HO-phL">
                                                         <rect key="frame" x="8" y="38.5" width="359" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.21113571524620056" green="0.48318028450012207" blue="0.75297218561172485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="A0a-Gl-R8h"/>
                                                     <constraint firstItem="aJp-HO-phL" firstAttribute="leading" secondItem="Pok-Ep-Lv4" secondAttribute="leading" id="BYf-BT-1g3"/>
@@ -514,11 +519,11 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="samvadiLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urg-Z2-Mc2">
                                                         <rect key="frame" x="8" y="37.5" width="359" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.21113571524620056" green="0.48318028450012207" blue="0.75297218561172485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="49y-49-b1W" firstAttribute="top" secondItem="SP0-CW-i7w" secondAttribute="topMargin" id="1TG-sh-5yk"/>
                                                     <constraint firstItem="49y-49-b1W" firstAttribute="trailing" secondItem="SP0-CW-i7w" secondAttribute="trailingMargin" id="2is-0x-N7S"/>
@@ -541,11 +546,11 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vivadiLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuO-Ou-KvM">
                                                         <rect key="frame" x="8" y="38.5" width="359" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.21113571524620056" green="0.48318028450012207" blue="0.75297218561172485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="fuO-Ou-KvM" firstAttribute="leading" secondItem="uuP-2I-aJJ" secondAttribute="leading" id="5uD-V7-CDP"/>
                                                     <constraint firstItem="fuO-Ou-KvM" firstAttribute="leading" secondItem="CW7-xy-xnv" secondAttribute="leadingMargin" id="AhV-zC-Dtp"/>
@@ -571,7 +576,7 @@
                                                             <constraint firstAttribute="height" constant="89" id="XRu-rA-UtN"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avroh (Descending Scale)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0C-Pq-pzZ">
@@ -586,7 +591,7 @@
                                                             <constraint firstAttribute="height" constant="89" id="Ysz-uc-q6X"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pakardh (Characteristic Sequence)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xid-Ba-Qm2">
@@ -598,7 +603,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mainSurLabel" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwb-zP-02q">
                                                         <rect key="frame" x="8" y="355" width="359" height="26.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sur (Features of the Scale):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4r-wM-at9">
@@ -610,11 +615,11 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="surLabel" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1H-zX-zA9">
                                                         <rect key="frame" x="8" y="452.5" width="359" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.21113571524620056" green="0.48318028450012207" blue="0.75297218561172485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="qOQ-wg-oN8" firstAttribute="leading" secondItem="B8U-Ub-BK8" secondAttribute="leading" id="14z-cU-DII"/>
                                                     <constraint firstItem="qOQ-wg-oN8" firstAttribute="trailing" secondItem="s4r-wM-at9" secondAttribute="trailing" id="1nw-ai-wdq"/>
@@ -706,11 +711,11 @@
             </objects>
             <point key="canvasLocation" x="336.80000000000001" y="30.134932533733135"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Notations-->
         <scene sceneID="sQR-dF-bYf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xss-Ug-q8a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="H2d-Sz-wOD"/>
+                    <tabBarItem key="tabBarItem" title="Notations" image="bandishIcon" id="H2d-Sz-wOD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vRd-pn-f5v">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -725,11 +730,11 @@
             </objects>
             <point key="canvasLocation" x="1276" y="803.74812593703155"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Raags-->
         <scene sceneID="FAW-FC-3fx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yUb-t2-Qan" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="ixr-QJ-F0E"/>
+                    <tabBarItem key="tabBarItem" title="Raags" image="raagIcon" id="ixr-QJ-F0E"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fle-Lt-jKc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -745,6 +750,10 @@
             <point key="canvasLocation" x="1276" y="30.134932533733135"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bandishIcon" width="37.5" height="37.5"/>
+        <image name="raagIcon" width="37.5" height="37.5"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CJB-lG-ufU"/>
     </inferredMetricsTieBreakers>

@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class NotationViewController: UIViewController, UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class NotationViewController: UIViewController, UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, KeyboardDelegate {
     
     // MARK: Properties
     
@@ -35,6 +35,8 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
     let VIEW_MODE_ANTRAA_1 = 1
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    var notationKeyboard: Keyboard?
     
     // CollectionView
     var editModeEnabled = false
@@ -66,35 +68,43 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         super.viewDidLoad()
         notationTextField.delegate = self
         notationTextField.tag = TAG_NAMEFIELD
+        
+        notationKeyboard = Keyboard(frame: CGRect(x: 0, y: 0, width: 0, height: 260))
+        notationKeyboard?.delegate = self
         inputTextField.delegate = self
         inputTextField.tag = TAG_INPUTFIELD
         inputTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+        inputTextField.inputView = notationKeyboard
         editToolbar.isHidden = true
         editToolbar.layer.cornerRadius = 5
         getNotationData()
+
     }
     
-    func createSampleData() {
-        surListA = ["", "", "", "", "N", "D", "P", "P", "M", "G", "R", "S", "N", "R", "S", "S", "N", "N", "R", "R", "G", "-", "G", "P", "P", "M", "G", "N", "R", "S", "S", "G", "-", "M", "M", "P", "-", "P", "P", "N", "D", "N", "S", "N", "D", "P", "P", "-"]
-        
-        wordListA = ["ha","ra","ha","ra","si","ma","ro","hu","sa","an","ta","go","pa","aa","la","aa","ha","ra","ha","ra","si","ma","ro","hu","sa","an","ta","go","pa","aa","la","aa","ha","ra","ha","ra","si","ma","ro","hu","sa","an","ta","go","pa","aa","la","aa"]
-        
-        surListB = ["S", "R", "S", "S", "N", "D", "P", "P", "M", "G", "R", "S", "N", "R", "S", "S", "N", "N", "R", "R", "G", "-", "G", "P", "P", "M", "G", "N", "R", "S", "S", "G", "-", "M", "M", "P", "-", "P", "P", "N", "D", "N", "S", "N", "D", "P", "P", "-"]
-        
-        wordListB = ["ha","ra","ha","ra","si","ma","ro","hu","sa","an","ta","go","pa","aa","la","aa","ha","ra","ha","ra","si","ma","ro","hu","sa","an","ta","go","pa","aa","la","aa","ha","ra","ha","ra","si","ma","ro","hu","sa","an","ta","go","pa","aa","la","aa"]
+    func fetchData() {
+        surListA = notation?.surListA ?? [""]
+        surListB = notation?.surListB ?? [""]
+        wordListA = notation?.wordListA ?? [""]
+        wordListB = notation?.wordListB ?? [""]
+        self.navigationItem.title = notation?.name
+    }
+    
+    func fetchSampleData() {
+        surListA = NotationTableViewController.sample1SursA
+        surListB = NotationTableViewController.sample1SursB
+        wordListA = NotationTableViewController.sample1WordsA
+        wordListB = NotationTableViewController.sample1WordsB
+        self.navigationItem.title = String(format: "%@%d", "Teentaal Bandish ", Int.random(in: 0 ... 10))
     }
     
     func getNotationData() {
-        if selectedNotationIndex == -1 {
-            editModeEnabled = true
-            createSampleData()
+        //if there is no index passed from previous TableVC
+        // then this is a new shabad, enable edit mode
+        editModeEnabled = (selectedNotationIndex == -1)
+        if editModeEnabled {
+            fetchSampleData()
         } else {
-            editModeEnabled = false
-            surListA = notation?.surListA ?? [""]
-            surListB = notation?.surListB ?? [""]
-            wordListA = notation?.wordListA ?? [""]
-            wordListB = notation?.wordListB ?? [""]
-            self.navigationItem.title = notation?.name
+            fetchData()
         }
         surData = surListA
         wordData = wordListA
@@ -142,14 +152,13 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
     }
     
     @IBAction func editTypeChanged(_ sender: UISegmentedControl) {
+        editTypeIsNotes = sender.selectedSegmentIndex == EDIT_MODE_NOTES
         inputTextField.text = ""
         inputTextField.resignFirstResponder()
-        if (sender.selectedSegmentIndex == EDIT_MODE_NOTES) {
-            editTypeIsNotes = true
-            inputTextField.keyboardType = .numberPad
+        if (editTypeIsNotes) {
+            inputTextField.inputView = notationKeyboard
         } else {
-            editTypeIsNotes = false
-            inputTextField.keyboardType = .alphabet
+            inputTextField.inputView = nil
         }
         inputTextField.becomeFirstResponder()
         selectCellAtIndex(index: selectedIndex!)
@@ -158,24 +167,12 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
     @IBAction func noteSetChanged(_ sender: UISegmentedControl) {
         selectedNotationList = sender.selectedSegmentIndex
         switch selectedNotationList {
-        case 0:
-            //ASTHAEE SELECTED, SAVE ANTRAA FIRST
-            surListB = surData
-            wordListB = wordData
-            
-            //THEN LOAD ASTHAEE DATA
+        case VIEW_MODE_ASTHAEE:
             surData = surListA
             wordData = wordListA
-        case 1:
-            //ANTRAA SELECTED, SAVE ASTHAEE FIRST
-            surListA = surData
-            wordListB = wordData
-            
-            //THEN LOAD ANTRAA DATA
+        case VIEW_MODE_ANTRAA_1:
             surData = surListB
             wordData = wordListB
-        case 2:
-            break
         default:
             break
         }
@@ -201,6 +198,28 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         collectionView.reloadData()
     }
     
+    // required method for keyboard delegate protocol
+    func keyWasTapped(character: String) {
+        switch character {
+        case "return":
+            self.textFieldShouldReturn(inputTextField)
+        case "ਖਾਲੀ":
+            inputTextField.insertText(" ")
+        case "⌫":
+            inputTextField.deleteBackward()
+        case "🅰":
+            inputTextField.resignFirstResponder()
+            inputTextField.inputView = nil
+            inputTextField.becomeFirstResponder()
+        case "̣⇧":
+            inputTextField.insertText("̣")
+        case "̇⇧":
+            inputTextField.insertText("̇")
+        default:
+            inputTextField.insertText(character)
+        }
+    }
+    
     func toggleEditMode(isEnabled: Bool) {
         collectionView.allowsSelection = isEnabled
         notationTextField.isHidden = !isEnabled
@@ -208,6 +227,8 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         editButton.isEnabled = !isEnabled
         if !isEnabled {
             editToolbar.isHidden = true
+        } else {
+            notationTextField.text = self.navigationItem.title
         }
         collectionView.reloadData()
     }
@@ -222,6 +243,10 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
             placeholder = cell.gurbaniLabel.text ?? ""
         }
         inputTextField.text = placeholder
+        if (editTypeIsNotes && inputTextField.inputView == nil) {
+            inputTextField.resignFirstResponder()
+            inputTextField.inputView = notationKeyboard
+        }
         inputTextField.becomeFirstResponder()
     }
     
