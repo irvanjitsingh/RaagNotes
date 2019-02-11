@@ -78,7 +78,7 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         editToolbar.isHidden = true
         editToolbar.layer.cornerRadius = 5
         getNotationData()
-
+        setupViewResizerOnKeyboardShown()
     }
     
     func fetchData() {
@@ -253,7 +253,7 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
     func editNextNote() {
         deselectCellAtIndex(index: selectedIndex!)
         let nextIndex = (selectedIndex?.row)! + 1
-        if (nextIndex <= surData.count) {
+        if (nextIndex < surData.count) {
             selectedIndex?.row = nextIndex
             collectionView.selectItem(at: selectedIndex, animated: true, scrollPosition: .top)
             selectCellAtIndex(index: selectedIndex!)
@@ -312,15 +312,16 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         return self.surData.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-        let availableWidth = view.frame.width - paddingSpace
-        let widthPerItem = availableWidth / itemsPerRow
-        return CGSize(width: widthPerItem, height: widthPerItem)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+//        let availableWidth = view.frame.width - paddingSpace
+//        let widthPerItem = availableWidth / itemsPerRow
+//        return CGSize(width: widthPerItem, height: widthPerItem)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! NotationCollectionViewCell
+        
         
         cell.surLabel.text = self.surData[indexPath.item]
         cell.surLabel.textColor = UIColor.white
@@ -333,6 +334,7 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         } else {
             cell.alpha = 1
         }
+        colorCell(cell: cell)
         if ((indexPath.row+1) % subRowCount == 0) {
             cell.subSeparator.backgroundColor = UIColor.black
         }
@@ -340,10 +342,32 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
             cell.mainSeparator.backgroundColor = UIColor.lightGray
         }
         cell.backgroundColor = appDelegate.blueColor
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 8
+        
+        let dashedBorder = CAShapeLayer()
+        dashedBorder.strokeColor = UIColor.black.cgColor
+        dashedBorder.lineWidth = 8
+        dashedBorder.lineDashPattern = [2, 2]
+        dashedBorder.frame = cell.bounds
+        dashedBorder.fillColor = nil
+        dashedBorder.path = UIBezierPath(rect: cell.bounds).cgPath
+        if (editModeEnabled) {
+            cell.layer.addSublayer(dashedBorder)
+        } else {
+            cell.layer.borderColor = UIColor.black.cgColor
+            cell.layer.borderWidth = 1
+        }
+        
         return cell
+    }
+    
+    private func colorCell(cell: NotationCollectionViewCell) {
+        switch cell.surLabel.text {
+        case "Sa":
+            cell.backgroundColor = appDelegate.blueColor
+        default:
+            break
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -370,5 +394,43 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         let name = self.navigationItem.title ?? "New Bandish"
         notation = Notation(name: name, surListA: surListA, surListB: surListB, wordListA: wordListA, wordListB: wordListB)!
     }
+    
+    func setupViewResizerOnKeyboardShown() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(NotationViewController.keyboardWillShowForResizing),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(NotationViewController.keyboardWillHideForResizing),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
+    
+    @objc func keyboardWillShowForResizing(notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
+            let window = self.view.window?.frame {
+            // We're not just minusing the kb height from the view height because
+            // the view could already have been resized for the keyboard before
+            self.view.frame = CGRect(x: self.view.frame.origin.x,
+                                     y: self.view.frame.origin.y,
+                                     width: self.view.frame.width,
+                                     height: window.origin.y + window.height - keyboardSize.height)
+        } else {
+            debugPrint("We're showing the keyboard and either the keyboard size or window is nil: panic widely.")
+        }
+    }
+    
+    @objc func keyboardWillHideForResizing(notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let viewHeight = self.view.frame.height
+            self.view.frame = CGRect(x: self.view.frame.origin.x,
+                                     y: self.view.frame.origin.y,
+                                     width: self.view.frame.width,
+                                     height: viewHeight + keyboardSize.height)
+        } else {
+            debugPrint("We're about to hide the keyboard and the keyboard size is nil. Now is the rapture.")
+        }
+    }
+
 
 }
