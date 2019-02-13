@@ -469,7 +469,7 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                             <size key="titleShadowOffset" width="2" height="3"/>
-                                            <state key="normal" title="ਖਾਲੀ">
+                                            <state key="normal" title="ਖਾੱਲੀ">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -488,7 +488,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="3wg-VQ-Ygo"/>
                                                 <constraint firstAttribute="width" constant="108" id="PWA-en-1Cw"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                             <size key="titleShadowOffset" width="2" height="3"/>
                                             <state key="normal" title="return">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

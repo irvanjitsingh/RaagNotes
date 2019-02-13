@@ -62,7 +62,22 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
     var wordListB: [String] = []
     var surData: [String] = []
     var wordData: [String] = []
-    
+    var surSymbolList = ["S","R̲","R","G̲","G","M","M̍","P","D̲","D","N̲","N","Ṡ"]
+    var keyPressMap: [String: String] =
+        ["Sa": "S",
+         "R̲e": "R̲",
+         "Re": "R",
+         "G̲a": "G̲",
+         "Ga": "G",
+         "Ma": "M",
+         "M̍a": "M̍",
+         "Pa": "P",
+         "D̲a": "D̲",
+         "Da": "D",
+         "N̲i": "N̲",
+         "Ni": "N",
+         "Ṡa": "Ṡ",
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -203,7 +218,7 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         switch character {
         case "return":
             self.textFieldShouldReturn(inputTextField)
-        case "ਖਾਲੀ":
+        case "ਖਾੱਲੀ":
             inputTextField.insertText(" ")
         case "⌫":
             inputTextField.deleteBackward()
@@ -216,8 +231,12 @@ class NotationViewController: UIViewController, UITextFieldDelegate, UICollectio
         case "̇⇧":
             inputTextField.insertText("̇")
         default:
-            inputTextField.insertText(character)
+            inputTextField.insertText(getMappedChar(char: character))
         }
+    }
+    
+    func getMappedChar(char: String) -> String {
+        return keyPressMap[char] ?? char
     }
     
     func toggleEditMode(isEnabled: Bool) {
